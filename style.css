@@ -1,13 +1,25 @@
 .watch-section{
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.title{
+.watch-text{
+    flex: 1;
+    padding: 40px;
+}
+.watch-title{
     color: rgb(65, 192, 243);
+    font-size: 32px;
+}
+.lorem-title{
+    font-size: 23px;
 }
 .watch-div{
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
+    padding: 40px;
 }
 .small-watch-img{
     width: 60px;
@@ -19,6 +31,29 @@
 }
 .watch-details{
     display: flex;
+}
+@media only screen and (min-width:641px) and (max-width:1007px){
+    .watch-title{
+        color: rgb(65, 192, 243);
+        font-size: 28px;
+    }
+    .lorem-title{
+        font-size: 20px;
+    }
+    .watch-text{
+        flex: 2;
+    }
+    .watch-div{
+        flex: 1;
+    }
+    .big-watch-image{
+        width: 250px;
+        height: 350px;
+    }
+    .watch-details{
+        display: flex;
+    }
+    
 }
 @media only screen and (max-width:415px) {
     .watch-section{
